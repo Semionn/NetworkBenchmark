@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+option java_package = "com.au.mit.benchmark.network.common";
+option java_outer_classname = "ProtobufMessage";
+
+message Message {
+    required int32 messageSize = 1;
+    repeated int32 body = 2;
+}
